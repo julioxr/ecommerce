@@ -1,7 +1,7 @@
 import React from "react";
 
 import MainHeader from "@/components/header/MainHeader";
-import MainProducts from "./components/products/MainProducts";
+import MainProducts from "@/components/products/MainProducts";
 
 const App = () => {
     return (
