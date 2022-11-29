@@ -27,16 +27,16 @@ const SlideProducts = () => {
 
     return (
         <>
-            <section className="grid md:grid-cols-4 md:grid-rows-2 md:gap-4">
+            <section className="grid md:grid-cols-4 md:gap-4">
                 {/* Imagen principal */}
                 <div className="relative col-span-4">
                     <img
                         src={ARRAY_IMGS[index]}
                         alt="Imagen principal de zapatillas"
-                        className=" aspect-[16/13] object-cover md:aspect-auto md:rounded-lg"
+                        className=" aspect-[16/13] w-full object-cover md:rounded-lg 2xl:max-h-[500px]"
                     />
                     {/* Botones del slide */}
-                    <div className="absolute top-1/2 flex w-full -translate-y-1/2 justify-between p-4">
+                    <div className="absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-between p-4">
                         <button
                             className=" grid h-10 w-10 place-items-center rounded-full bg-white pr-1"
                             onClick={handlePrevImg}
@@ -54,22 +54,18 @@ const SlideProducts = () => {
                 {/* Imagenes debajo de la imagen grande */}
                 <img
                     src={imgProductSmall1}
-                    alt=""
                     className="hidden rounded-lg md:block"
                 />
                 <img
                     src={imgProductSmall2}
-                    alt=""
                     className="hidden rounded-lg md:block"
                 />
                 <img
                     src={imgProductSmall3}
-                    alt=""
                     className="hidden rounded-lg md:block"
                 />
                 <img
                     src={imgProductSmall4}
-                    alt=""
                     className="hidden rounded-lg md:block"
                 />
             </section>

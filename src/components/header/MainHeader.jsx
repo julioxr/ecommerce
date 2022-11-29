@@ -25,7 +25,7 @@ const MainHeader = () => {
     return (
         <>
             {/* Header */}
-            <header className="container mx-auto flex items-center gap-8 p-4 py-6 md:p-0 md:py-0">
+            <header className="container mx-auto flex items-center gap-8 p-4 py-6 md:p-0 md:p-0">
                 {/* Hamburguesa y logo */}
                 <button className="md:hidden" onClick={handleOpenMenu}>
                     <MenuIcon />

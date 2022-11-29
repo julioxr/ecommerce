@@ -1,8 +1,10 @@
 import CartIcon from "@/components/icons/CartIcon";
+import MinusIcon from "@/components/icons/MinusIcon";
+import PlusIcon from "@/components/icons/PlusIcon";
 
 const DetailProducts = () => {
     return (
-        <section className="container mx-auto px-4">
+        <section className="container mx-auto px-4 md:px-0">
             <p className="mb-3 text-sm font-bold uppercase tracking-wide text-orange-primary">
                 Sneaker Company
             </p>
@@ -24,12 +26,16 @@ const DetailProducts = () => {
                 </p>
             </div>
             <div className="grid grid-cols-3">
-                <div className="col-span-3">
-                    <button>-</button>
-                    <span>0</span>
-                    <button>+</button>
+                <div className="col-span-3 my-4 flex items-center justify-between rounded-md bg-light-grayish-blue px-5 py-2 font-bold">
+                    <button className="text-3xl text-orange-primary">
+                        <MinusIcon />
+                    </button>
+                    <span className="text-xl">0</span>
+                    <button className="text-3xl text-orange-primary">
+                        <PlusIcon />
+                    </button>
                 </div>
-                <button className="col-span-3 flex items-center justify-center gap-x-3 rounded-md bg-orange-primary py-3 font-bold text-white">
+                <button className="col-span-3 mb-6 flex items-center justify-center gap-x-3 rounded-md bg-orange-primary py-3 font-bold text-white transition-all hover:bg-orange-400">
                     <CartIcon />
                     <span>Add to cart</span>
                 </button>
